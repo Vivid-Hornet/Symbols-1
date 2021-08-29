@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5b5d13cf88e85438ec224c12410f06, type: 3}
+  m_Name: ATK Card
+  m_EditorClassIdentifier: 
+  cardName: Attack
+  description: Deals up to 100 Damage
+  power: 100
+  cardArt: {fileID: 21300000, guid: a9319ed33ded49a4183557da8286c86b, type: 3}
+  polyPoints: 4
