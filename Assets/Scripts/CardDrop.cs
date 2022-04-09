@@ -6,11 +6,11 @@ using UnityEngine.EventSystems;
 public class CardDrop : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IDropHandler
 {
     public void OnPointerEnter(PointerEventData eventData) {
-        Debug.Log("Enter Pointer");
+        //Debug.Log("Enter Pointer");
     }
 
     public void OnPointerExit(PointerEventData eventData) {
-        Debug.Log("Exit Pointer");
+        //Debug.Log("Exit Pointer");
     }
 
     public void OnDrop(PointerEventData eventData) {

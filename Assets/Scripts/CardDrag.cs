@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class CardDrag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
+public class CardDrag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler, IPointerEnterHandler, IPointerExitHandler
 {
     public Transform returnParent = null;
     public GameObject etcher;
@@ -32,6 +32,17 @@ public class CardDrag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
             
             Destroy(gameObject);
         }
+    }
+    public void OnPointerEnter(PointerEventData eventData) {
+        Debug.Log("Enter Pointer");
+        transform.localScale *= 1.1f;
+        gameObject.transform.position += Vector3.up * 70f;
+    }
+
+    public void OnPointerExit(PointerEventData eventData) {
+        Debug.Log("Exit Pointer");
+        transform.localScale /= 1.1f;
+        gameObject.transform.position += Vector3.down * 70f;
     }
 
     public void OnDrag(PointerEventData eventData) {

@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
-public class CardMovement : MonoBehaviour
-{
+
+public class CardMovement : MonoBehaviour { 
     public GameObject template;
     public GameObject etcher;
     public bool isDrawing = false;
@@ -49,4 +50,6 @@ public class CardMovement : MonoBehaviour
             transform.position = startingPosition;
         }
     }
+
+
 }
